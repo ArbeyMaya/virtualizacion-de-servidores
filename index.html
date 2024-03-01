@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Virtualizacion de servidores</title>
+</head>
+<body>
+    <h1>VIRTUALIZACIÒN</h1>
+
+    <section>
+        <div>
+            <div>
+                <ul>
+                    <a href="#Que_es_la_virtualización"><li>¿Qué es la virtualización?</li></a>
+                    <a href="#como_funciona"><li>¿Cómo funciona la virtualización?</li></a>
+                    <a href="#ejemplos"><li>Ejemplos</li></a>
+                    <a href="#ventajas"><li>Ventajas</li></a>
+                    <a href="#desventajas"><li>Desventajas</li></a>
+                    <li>Comprendido en clase en una imagen</li>
+                    <a href="#pregunta"><li>¿Por qué es importante conocer el concepto y cómo se puede aplicar la virtualización comoestrategia para optimizar los recursos físicos en el ambiente laboral y/o personal?</li></a>
+                </ul>
+            </div>
+                <h2 id="Que_es_la_virtualización">¿Que es la virtualización?</h2>
+
+                <p>La virtualización es una tecnología que permite crear servicios de TI útiles, con recursos que están tradicionalmente limitados al hardware. Gracias a que distribuye las funciones de una máquina física entre varios usuarios o entornos, posibilita el uso de toda la capacidad de la máquina.</p>
+
+                <p>En términos prácticos, imagínese que tiene tres servidores físicos, cada uno con propósitos específicos. Uno es un servidor de correo, otro es un servidor web y el tercero ejecuta aplicaciones heredadas internas. Se utiliza alrededor del 30 % de la capacidad de cada servidor, es decir, solo una parte de su potencial. Pero como las aplicaciones heredadas siguen siendo importantes para sus operaciones internas, tiene que conservarlas junto con el tercer servidor que las aloja, ¿cierto?</p>
+
+                <img src="/img/Que_es_1.png" alt="VIRTUALIZACIÒN DE SERVIDORES">
+
+                <p>Normalmente, la respuesta sería que sí. Por lo general, era más fácil y confiable ejecutar tareas individuales en cada servidor (es decir, un servidor, un sistema operativo y una tarea), ya que no era sencillo asignarle varias. Sin embargo, la virtualización permite dividir el servidor de correo en otros dos únicos que pueden ocuparse de tareas independientes, para poder trasladar las aplicaciones heredadas. Se utiliza el mismo hardware, pero de manera más eficiente.</p>
+
+                <img src="/img/que_es_2.png" alt="VIRTUALIZACIÒN DE SERVIDORES">
+
+                <P>Si pensamos en la seguridad, es posible volver a dividir el primer servidor para que gestione otra tarea y aumentar su uso de un 30 % a un 60 %, y luego a un 90 %. Una vez que lo logra, los servidores que quedan vacíos se pueden reutilizar para otras tareas o retirarse todos juntos para reducir los costos de refrigeración y mantenimiento.</P>
+
+                <H2 id="como_funciona">¿Cómo funciona la virtualización?</H2>
+
+                <P>El software denominado hipervisor separa los recursos físicos de los entornos virtuales que los necesitan. Los hipervisores pueden controlar un sistema operativo (como una computadora portátil) o instalarse directamente en el hardware (como un servidor), que es la forma en que la mayoría de las empresas implementan la virtualización. Los hipervisores toman los recursos físicos y los dividen de manera tal que los entornos virtuales puedan usarlos.</P>
+
+                <img src="/img/funcion1.png" alt="">
+
+                <h2 id="ejemplos">EJEMPLOS:</h2>
+                <ul>
+                    <li>Servidores de Data Center:</li>
+                    <p>En entornos de centros de datos, la virtualización de servidores permite consolidar múltiples servidores físicos en uno solo o en varios servidores físicos más potentes. Esto maximiza la utilización de recursos, reduce costos de energía y espacio físico, y simplifica la administración y la escalabilidad.</p>
+
+                    <li>Virtualización de Escritorio (VDI):</li>
+                    <p>La virtualización de escritorio permite a los usuarios acceder a sus entornos de trabajo desde cualquier dispositivo conectado a la red. Esto proporciona flexibilidad, seguridad y facilidad de administración para entornos empresariales. Los usuarios pueden acceder a sus escritorios y aplicaciones desde cualquier lugar, lo que facilita el trabajo remoto y la colaboración.</p>
+
+                    <li>Pruebas y Desarrollo de Software:</li>
+                    <p>La virtualización es ampliamente utilizada en entornos de pruebas y desarrollo de software. Permite crear entornos de prueba aislados y replicables, lo que facilita la verificación de la compatibilidad del software, la realización de pruebas de rendimiento y la depuración de aplicaciones. Además, la virtualización permite a los desarrolladores trabajar en múltiples entornos sin la necesidad de hardware físico adicional.</p>
+
+                    <li>Virtualización de Redes:</li>
+                    <p>La virtualización de redes permite crear redes virtuales dentro de una infraestructura física. Esto es útil para segmentar el tráfico de red, mejorar la seguridad, optimizar el rendimiento y simplificar la administración de redes. Los administradores pueden crear redes virtuales independientes para diferentes fines, como desarrollo, pruebas, producción, etc.</p>
+
+                    <li>Entornos de Educación y Capacitación: </li>
+                    <p>La virtualización se utiliza en entornos educativos y de capacitación para proporcionar acceso a software y recursos de computación a estudiantes y profesionales sin la necesidad de instalarlos localmente. Esto facilita la entrega de cursos en línea, laboratorios virtuales y entornos de capacitación práctica en áreas como la informática, las ciencias de la computación, la ingeniería y más.</p>
+                </ul>
+
+                <h2 id="ventajas">VENTAJAS</h2>
+                <ul>
+                    <li>Consolidación de Recursos:</li>
+                    <p>La virtualización permite consolidar múltiples servidores físicos en uno solo o en un número reducido de servidores físicos más potentes. Esto maximiza la utilización de recursos como CPU, memoria y almacenamiento, lo que conduce a una mayor eficiencia y ahorro de costos.</p>
+
+                    <li>Flexibilidad y Escalabilidad:</li>
+                    <p>Con la virtualización, es fácil crear, configurar y desplegar nuevas máquinas virtuales (VMs) según sea necesario. Esto proporciona una escalabilidad dinámica para adaptarse a las demandas cambiantes de carga de trabajo sin la necesidad de adquirir nuevo hardware físico.</p>
+
+                    <li>Aislamiento de Recursos: </li>
+                    <p>Cada máquina virtual funciona de manera aislada, lo que significa que los recursos asignados a una VM no afectan el rendimiento de otras VMs en el mismo servidor físico. Esto mejora la seguridad y la estabilidad del entorno de servidor.</p>
+
+                    <li>Administración Simplificada:</li>
+                    <p>La virtualización centraliza la administración de servidores y simplifica tareas como la copia de seguridad, la recuperación ante desastres, la migración de VMs y la implementación de parches y actualizaciones. Esto reduce la carga administrativa y aumenta la eficiencia operativa.</p>
+
+                    <li>Alta Disponibilidad y Tolerancia a Fallos:</li>
+                    <p>Las soluciones de virtualización ofrecen características de alta disponibilidad y tolerancia a fallos, como la migración en caliente de VMs y la replicación de datos, que garantizan la continuidad del negocio y minimizan el tiempo de inactividad en caso de fallos de hardware o mantenimiento programado.</p>
+                </ul>
+
+                <h2 id="desventajas">DESVENTAJAS</h2>
+                <ul>
+                    <li>Sobrecarga de Recursos: </li>
+                    <p>La virtualización introduce una pequeña sobrecarga de recursos en el servidor físico debido a la capa de virtualización y la necesidad de administrar múltiples sistemas operativos simultáneamente. Esto puede afectar ligeramente el rendimiento en comparación con servidores físicos dedicados.</p>
+
+                    <li>Complejidad de Implementación:</li>
+                    <p>La implementación inicial de una infraestructura de virtualización puede ser compleja y requerir inversiones significativas en hardware, software y capacitación del personal. Además, la gestión de entornos virtualizados puede ser más compleja que la gestión de servidores físicos tradicionales.</p>
+
+                    <li>Riesgo de Contención de Recursos: </li>
+                    <p> Si no se gestiona adecuadamente, puede haber problemas de contención de recursos donde varias VMs compiten por los mismos recursos físicos, lo que puede afectar negativamente el rendimiento y la estabilidad del sistema.</p>
+
+                    <li>Riesgo de Seguridad:</li>
+                    <p>La virtualización introduce nuevos vectores de ataque y vulnerabilidades potenciales, como la fuga de información entre VMs o el compromiso del hipervisor. Es fundamental implementar medidas de seguridad adecuadas, como la segmentación de redes y la autenticación de usuarios, para mitigar estos riesgos.</p>
+
+                    <li>Dependencia del Hipervisor:</li>
+                    <p>La fiabilidad y el rendimiento del hipervisor son críticos para el funcionamiento de todas las VMs en el servidor físico. Cualquier fallo o problema con el hipervisor puede afectar a todas las VMs alojadas en el mismo, lo que resalta la importancia de seleccionar y mantener una plataforma de virtualización robusta y confiable.</p>
+                </ul>
+
+                <h2 id="pregunta">¿Por qué es importante conocer el concepto y cómo se puede aplicar la virtualización como estrategia para optimizar los recursos físicos en el ambiente laboral y/o personal?</h2>
+
+                <ul>
+                    <li>Eficiencia de Recursos: </li>
+                    <p>La virtualización permite aprovechar al máximo los recursos físicos disponibles al consolidar múltiples sistemas en un único hardware. Esto significa que se pueden ejecutar varias máquinas virtuales en un solo servidor físico, lo que resulta en un uso más eficiente de la capacidad de procesamiento, memoria y almacenamiento.</p>
+
+                    <li>Reducción de Costos:</li>
+                    <p>Al optimizar la utilización de los recursos físicos, la virtualización puede ayudar a reducir los costos operativos y de capital. Se necesitan menos servidores físicos para ejecutar la misma cantidad de cargas de trabajo, lo que reduce los costos de adquisición de hardware, consumo de energía, refrigeración y espacio en el centro de datos.</p>
+
+                    <li>Flexibilidad y Escalabilidad:</li>
+                    <p>La virtualización proporciona una plataforma flexible y escalable para adaptarse a las cambiantes necesidades de negocio. Es fácil agregar o eliminar recursos virtuales según sea necesario, lo que permite escalar vertical u horizontalmente para satisfacer la demanda de recursos de manera rápida y eficiente.</p>
+
+                    <li>Continuidad del Negocio: </li>
+                    <p>Al consolidar múltiples sistemas en un solo hardware, la virtualización facilita la implementación de medidas de alta disponibilidad y recuperación ante desastres. Las máquinas virtuales pueden ser migradas de forma rápida y automática entre servidores físicos en caso de falla o mantenimiento, lo que ayuda a minimizar el tiempo de inactividad y garantizar la continuidad del negocio.</p>
+
+                    <li>Mejora de la Administración y Mantenimiento: </li>
+                    <p>La virtualización simplifica la administración y el mantenimiento de los sistemas al centralizar la gestión de múltiples máquinas virtuales desde una sola consola de administración. Esto facilita tareas como la implementación de parches y actualizaciones, la monitorización del rendimiento y la gestión de la capacidad.</p>
+
+                    <li>Seguridad Mejorada:</li>
+                    <p>La virtualización puede mejorar la seguridad al permitir el aislamiento de aplicaciones y cargas de trabajo en entornos virtuales separados. Además, las máquinas virtuales pueden ser respaldadas y restauradas de forma rápida y sencilla, lo que contribuye a la protección de datos y la prevención de pérdida de información.</p>
+                </ul>
+            <div>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>
