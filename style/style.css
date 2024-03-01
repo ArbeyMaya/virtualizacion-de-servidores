@@ -1,0 +1,17 @@
+nav{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
+.secciones {
+    margin-right: 10rem;
+}
+
+.container {
+    display: flex;
+}
+
+.contenido {
+    width: 60%;
+}
